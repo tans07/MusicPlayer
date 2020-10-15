@@ -1,0 +1,83 @@
+
+img{
+    height:10rem;
+    width:10rem;    
+    position: relative;
+    top:48px;
+    border-radius: 50%;
+    box-shadow:0 4px 8px 0 black;
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    
+    margin: 0 auto;
+    height:600px;
+    width:384px;
+    border:0px solid black;
+    border-radius: 2em;
+    /* background-image: linear-gradient(rgba(0, 245, 253, 0.815), rgb(234, 250, 141)); */
+    /* background-image: linear-gradient(to top right,rgba(248, 52, 52, 0.877),rgb(49, 35, 35)); */
+    background-image: linear-gradient(to Bottom right,black,red);
+    box-shadow:0 4px 8px 0 rgba(29, 4, 4, 0.87);
+}
+#name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1,h3{
+    position: relative;
+    top:120px;
+}
+
+h1{
+    font-family: 'Dancing Script', cursive; 
+    text-shadow: 4px 4px 7px white;
+    font-size: 45px;
+}
+h3{
+    /* color: white; */
+    text-shadow:2px 2px 5px white;
+    font-size: 25px;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height:300px;
+    position: relative;
+    top:150px;
+}
+
+.fa{
+    margin:32px;
+    height:15px;
+    width:10px; 
+    text-shadow: 2px 2px 5px white;
+}
+@keyframes pulse_animation {
+    0% { transform: scale(1); }
+    30% { transform: scale(1); }
+    40% { transform: scale(1.08); }
+    50% { transform: scale(1); }
+    60% { transform: scale(1); }
+    70% { transform: scale(1.05); }
+    80% { transform: scale(1); }
+    100% { transform: scale(1); }
+}
+.effect {
+    animation-name: pulse_animation;
+    animation-duration: 500ms;
+    transform-origin:70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
